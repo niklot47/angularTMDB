@@ -1,0 +1,46 @@
+.wrap {
+  width: 8.1vw;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+img {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAANlBMVEXFxcWAgIDExMTIyMiDg4N8fHyUlJSlpaW0tLSwsLCurq6oqKihoaGbm5uMjIy+vr64uLiQkJD7tOQ8AAAD/UlEQVR4nO2c2XqDIBBGFTRmqUve/2VrGxdwSyCgM+N/buLXtIZTwgyDaJLYKItECmsuaoud2xiMTSkRisroUa4OAJyHc4zSNia9wpLLAZt/DZuGegND/qjJq9sBB1g11g+HKeyhE1olvjdgyB9/w9ccRf1XW04HO/OVYffqdsAn0jAyFA4M+YNswR8YbvzlK4kr5XiAbBEcvuvznyJeEIYCOMM4lJ4Sz9CHR7cgNviW8ke8IAwFcIZxiFjKHfGC+JYKQLwgDAVwhnGIWMod8YL4lgJuiLijYpMTGCbS7yixr9ce3ZoYnMBQ/jiEIXtgyB8fQx2T8IaJa8bX6l5eYlHeVWhH53yob2mexiNPb4EVXQ31Labfv2NgRddxqGILtophA56jof7ZwfAnaCe6GlbRBdO0OtQwG//VoRnOnNEwLIvQlKQMszpCsq/jGCZOGb8zzB/h5x7tyYs8iqFTPuwNryHbMJz8DkMf/MYhDP0QZai1aq5NbRdL/ZxXgKFWj+qV5MvasJHTh/qWDROYvDR+LsXQnr3n1fCpsbKFV8b/wnBWnmT9xwrJh/o6rb/yS2cUKdLsbpilU/Kme0tELF1cBXlq6z3mhpe5YJrWr/dEGCbzL+lwOhmGiytZXTEm2bAQbxi1D5OdM/7+43DnfHhALN3bUHw+XFpTZjmn2Wjj7vPSCIZaN7dmVXKjtuBiqK/ZX/l+/0zRqA8TJoZ9T6yvGq/V+EwMh7X5NF/vxeV1mkiGSeCMr4yrU9fVpi6utcUyDJsP9dNKA25t5WCoSztQ1k6NZTAO+6tHnor0DeerTGOy+wT6hvXUr6VyUCRvqJYqo7SanWN1axd1QyuMGgH1aV9+UY+yWPkg4obTMDoqXowW66adz+TZcgCKafjpY8fWDfVjdS9RXg5N7hfuu5p3wjWGoSOrhgth1FDsdzmNk+6lGKtJGy6FUUOxW0y7GNuC5oqkDZfDqNmLbQitK7OfZzGWtKF+vtvQl2fPyv6dSYxNSBuuhtFt6cvEhK7hRhjdViwnKlQNdeO753S6k5Sq4XYY3VYsLBmqhm/C6LaitZhD09DMcT6K5mIOScOvN36bizkUDYd55heK42IOQUP/MGoyKBI0rL+JMiN9LUXQMNC9CVlXS5Ez/DKMGnSLOdQMQ94/U1E0DBBGR/InPcMwYXRU/Cs0SBlqFdLvpUiregp/i1dbS1EybLxq3jeKRUPHMA2WJyzFbq8NCcOowBCGMIQhDGEIQxjCEIbvDPk9F8PVkN+zTVzh93waV/g9Y8hDMe5zorKjBRN2z/ryIcKDW0aOlgMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADE4Be+rjyC6Vu/VwAAAABJRU5ErkJggg==");
+  min-height: 12vw;
+  width: 8.1vw;
+  box-sizing: border-box;
+  border: 1px hidden white;
+  border-radius: 20px;
+}
+
+.wrap:hover img {
+  -webkit-box-shadow: 0px 5px 10px -2px blueviolet;
+  -moz-box-shadow: 0px 5px 10px -2px blueviolet;
+  box-shadow: 0px 5px 10px -2px blueviolet;
+  border: 1px hidden white;
+}
+
+.title {
+  max-height: 38px;
+  overflow-y: hidden;
+}
+
+.info {
+  min-height: 90px;
+  max-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rate {
+  width: max-content;
+  box-sizing: border-box;
+  background: purple;
+  border: 1px hidden indigo;
+  border-radius: 3px;
+  padding: 2px 7px;
+  color: gold;
+}

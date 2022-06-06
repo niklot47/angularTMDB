@@ -1,0 +1,58 @@
+.wrap{
+  padding: 20px;
+}
+
+.all-genres{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 30px;
+  width: 90vw;
+  row-gap: 15px;
+}
+
+.title{
+  font-size: 22px;
+  margin:0 auto 20px;
+  width:90vw;
+}
+
+.movies{
+  width:90vw;
+  height: auto;
+  display:flex;
+  flex-wrap:wrap;
+  column-gap: 1vw;
+  row-gap: 30px;
+  justify-content: space-between;
+  margin:0 auto;
+}
+
+/**************************************/
+
+.pages{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.page,
+.page-active{
+  font-size: 16px;
+  background: indigo;
+  color: white;
+  border: none;
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  min-width: 30px;
+}
+
+.page-active{
+  background: white;
+  color: indigo;
+}
+
+.page-active:hover{
+  background: lightgrey;
+}

@@ -1,0 +1,7 @@
+.wrap {
+  height: calc(100vh - 60px);
+  box-sizing: border-box;
+
+  overflow-y: auto;
+}
+

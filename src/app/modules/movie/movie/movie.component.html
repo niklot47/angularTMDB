@@ -1,0 +1,69 @@
+<div class="wrap">
+  <div class="main" *ngIf="movie">
+
+    <div class="movie">
+      <div class="poster">
+        <img src="{{movie.poster_path}}" alt="{{movie.title}}">
+      </div>
+      <div class="info">
+        <div class="title">
+          <b>{{movie.title}}</b>
+        </div>
+
+        <div class="tagline" *ngIf="movie.tagline">
+          <div>"{{movie.tagline}}"</div>
+        </div>
+
+        <div class="adult" *ngIf="movie.adult">
+          <b>+18 only! </b>
+        </div>
+
+        <div class="original_title">
+          Original title: {{movie.original_title}}
+        </div>
+
+        <div class="language">
+          Original language: {{movie.original_language}}
+        </div>
+
+        <div class="runtime">
+          Runtime: {{movie.runtime}} minutes
+        </div>
+
+        <div class="release_date">
+          Release date: {{movie.release_date  | date}}
+        </div>
+
+        <div class="homepage">
+          Homepage: <a href="{{movie.homepage}}">{{movie.homepage}}</a>
+        </div>
+
+        <div class="budget">
+          Budget: {{movie.budget}} $
+        </div>
+
+        <div class="revenue">
+          Revenue: {{movie.revenue}} $
+        </div>
+
+        <div class="popularity">
+          Popularity: {{movie.popularity}}
+        </div>
+
+        <div class="vote_average">
+          Vote average: {{movie.vote_average}}  ★ ( {{movie.vote_count}} votes)
+        </div>
+
+        <div class="genres">
+          <app-bage *ngFor="let genre of movie.genres" [genre]="genre"></app-bage>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="overview">
+      {{movie.overview}}
+    </div>
+
+  </div>
+</div>

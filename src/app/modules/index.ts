@@ -1,0 +1,5 @@
+export * from  './home/home.module'
+export * from  './movie/movie.module'
+export * from  './genres/genres.module'
+export * from  './by-genre/by-genre.module'
+export * from  './movies/movies.module'
