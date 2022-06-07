@@ -1,0 +1,39 @@
+
+.wrap{
+  width: 90vw;
+  height: 15vh;
+  color: white;
+  padding: 20px;
+  font-size: 35px;
+  box-sizing: border-box;
+}
+
+.wrap input{
+  font-size: 20px;
+  width: 60vw;
+  height: 30px;
+  background: silver;
+  color: black;
+  margin: 0;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 20px;
+}
+
+.wrap form{
+  box-sizing: border-box;
+  /*height: 20vh;*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 ;
+}
+
+.wrap a{
+  margin: 0 20px;
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 20px;
+}

@@ -24,7 +24,7 @@ import {ReactiveFormsModule} from "@angular/forms";
     GenresComponent,
     ByGenreComponent,
     SearchResultComponent,
-    BageComponent,
+    // BageComponent,
     MoviesComponent,
     SearchComponent,
   ],
@@ -36,7 +36,11 @@ import {ReactiveFormsModule} from "@angular/forms";
     ReactiveFormsModule
   ],
   providers: [],
-  exports: [],
+  exports: [
+    SearchComponent,
+    GenresComponent,
+    BageComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

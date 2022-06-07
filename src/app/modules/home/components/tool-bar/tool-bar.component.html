@@ -1,0 +1,15 @@
+<div class="wrap">
+  <div class="poster">
+    <img src="{{path}}">
+  </div>
+  <div class="search">
+    <app-search-big></app-search-big>
+  </div>
+
+  <div class="genres">
+    <b>Or choose genre:</b>
+    <div class="all-genres">
+      <app-bage *ngFor="let genre of genres" [genre]="genre"></app-bage>
+    </div>
+  </div>
+</div>

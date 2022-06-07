@@ -1,0 +1,42 @@
+.wrap{
+  margin-top: 30px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.wrap img{
+  width: 90vw;
+  box-sizing: border-box;
+  margin-top: -45vh;
+}
+
+.poster{
+  height: 45vh;
+  overflow-y: hidden;
+  }
+
+.search{
+  background: hsla(271, 57%, 25%, 0.85);;
+  -webkit-box-shadow: 0 0 47px 29px hsla(271, 57%, 25%, 0.85);
+  box-shadow: 0 0 47px 29px hsla(271, 57%, 25%, 0.85);
+
+  margin-top: -15vh;
+  position: relative;
+  z-index: auto;
+}
+
+.genres{
+  width: 90vw;
+  margin-top: 40px;
+  font-size: 22px;
+}
+
+
+.all-genres{
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto 30px;
+  width: 90vw;
+  row-gap: 15px;
+}

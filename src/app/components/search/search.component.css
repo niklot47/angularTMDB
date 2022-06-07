@@ -1,4 +1,4 @@
-input{
+.wrap input{
   text-decoration: none;
   background: none;
   color: white;
@@ -8,13 +8,14 @@ input{
   padding: 3px;
 }
 
-form{
+.wrap form{
 
 }
 
-a{
+.wrap a{
   color: white;
   text-decoration: none;
   font-style: italic;
   font-size: 16px;
 }
+

@@ -41,6 +41,10 @@ export const size = {
   }
 }
 
+export function  posterPath(short:string, width: string):string{
+  return `https://image.tmdb.org/t/p/${width}${short}`;
+}
+
 export function  allPosterPath(movie: IMovieShort|IMovieDetail, width: string):IMovieShort|IMovieDetail{
   movie.poster_path = `https://image.tmdb.org/t/p/${width}${movie.poster_path}`;
   return movie

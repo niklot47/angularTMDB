@@ -1,28 +1,30 @@
 <div class="wrap">
+
   <div class="all-genres">
-    <div class="title">Another genres: </div>
+    <div class="title">Another genres:</div>
     <app-bage *ngFor="let genre of genres" [genre]="genre"></app-bage>
   </div>
 
-  <div class="title" *ngIf="genre">By genre "{{genre.name}}" {{result.total_results}} results: </div>
+  <div class="title" *ngIf="genre">By genre "{{genre.name}}" {{result.total_results}} results:</div>
   <div class="movies">
     <app-movie-card *ngFor="let movie of movies" [movie]="movie"></app-movie-card>
   </div>
   <hr>
-</div>
 
 
-<div *ngIf="result" class="pages">
+  <div *ngIf="result" class="pages">
   <span *ngIf="result.page-1 !== 0">
   <button class="page-active" (click)="setPage(result.page-1)">« Previous</button>
   <button class="page-active" (click)="setPage(1)">1</button> ... </span>
-  <button class="page-active" *ngIf="result.page-1 !== 0" (click)="setPage(result.page-1)">{{result.page - 1}}</button>
-  <button class="page">{{result.page}}</button>
-  <button *ngIf="result.page+1 < result.total_pages" class="page-active"
-          (click)="setPage(result.page+1)">{{result.page + 1}}</button>
-  <span class="page-active" *ngIf="result.page < result.total_pages">... </span>
-  <button *ngIf="result.page < result.total_pages" class="page-active"
-          (click)="setPage(result.total_pages)">{{result.total_pages}}</button>
-  <button class="page-active" *ngIf="result.page < result.total_pages" (click)="setPage(result.page+1)">Next »
-  </button>
+    <button class="page-active" *ngIf="result.page-1 !== 0"
+            (click)="setPage(result.page-1)">{{result.page - 1}}</button>
+    <button class="page">{{result.page}}</button>
+    <button *ngIf="result.page+1 < result.total_pages" class="page-active"
+            (click)="setPage(result.page+1)">{{result.page + 1}}</button>
+    <span class="page-active" *ngIf="result.page < result.total_pages">... </span>
+    <button *ngIf="result.page < result.total_pages" class="page-active"
+            (click)="setPage(result.total_pages)">{{result.total_pages}}</button>
+    <button class="page-active" *ngIf="result.page < result.total_pages" (click)="setPage(result.page+1)">Next »
+    </button>
+  </div>
 </div>

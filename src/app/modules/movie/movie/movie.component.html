@@ -1,4 +1,4 @@
-<div class="wrap">
+<div class="wrap" >
   <div class="main" *ngIf="movie">
 
     <div class="movie">
@@ -63,6 +63,13 @@
     </div>
     <div class="overview">
       {{movie.overview}}
+    </div>
+
+    <div class="similar" *ngIf="similar">
+      <div class="similar-title"><b>Similar movies: </b></div>
+      <div class="similar-movies">
+        <app-movie-card *ngFor="let movie of similar" [movie]="movie"></app-movie-card>
+      </div>
     </div>
 
   </div>

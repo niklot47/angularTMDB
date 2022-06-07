@@ -20,8 +20,8 @@
 }
 
 .movie{
-  /*width: 90vw;*/
   display: flex;
+  justify-content: center;
 }
 
 .info{
@@ -55,7 +55,8 @@
 .release_date,
 .revenue,
 .overview,
-.runtime{
+.runtime,
+.similar-title{
   font-size: 28px;
   margin-bottom: 8px;
 }
@@ -78,6 +79,21 @@
   font-size: 32px;
 }
 
+.similar{
+  width:90vw;
+  margin:70px auto 0;
+}
+
+.similar-movies{
+  margin-top: 20px;
+  height: auto;
+  display:flex;
+  flex-wrap:wrap;
+  column-gap: 1vw;
+  row-gap: 30px;
+  justify-content: space-between;
+
+}
 
 
 

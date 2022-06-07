@@ -1,10 +1,13 @@
 <div class = 'wrap' routerLink="/movie/{{movie.id}}">
+
   <div class="poster">
     <img src="{{movie.poster_path}}" alt="{{movie.title}}" width="300wv">
   </div>
+
   <div class="info">
     <div class="title"><b>{{movie.title}}</b></div>
-    <div class="date">{{movie.release_date  | date}}</div>
+    <div class="date">{{movie.release_date | date}}</div>
     <div class="rate"><b>{{movie.vote_average}} ★</b></div>
   </div>
+
 </div>

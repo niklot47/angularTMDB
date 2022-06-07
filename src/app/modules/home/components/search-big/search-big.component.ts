@@ -1,13 +1,12 @@
-import {Component, Input, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
-  selector: 'app-search',
-  templateUrl: './search.component.html',
-  styleUrls: ['./search.component.css']
+  selector: 'app-search-big',
+  templateUrl: './search-big.component.html',
+  styleUrls: ['./search-big.component.css']
 })
-export class SearchComponent implements OnInit {
-
+export class SearchBigComponent implements OnInit {
   form: FormGroup;
   searchQuery: string;
 
