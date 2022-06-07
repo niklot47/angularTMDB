@@ -2,10 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 
 import {MovieService} from "../service/movie.service";
-import {IGenre, IMovieDetail, IMovieShort, IPage} from "../../../interface";
+import {IGenre, IMovieDetail, IMovieShort} from "../../../interface";
 import {allPosterPath, size} from "../../../constants";
-import {DateService} from "../../../data/date.service";
-
 @Component({
   selector: 'app-movie',
   templateUrl: './movie.component.html',
@@ -18,7 +16,7 @@ export class MovieComponent implements OnInit {
   similar: IMovieShort[];
 
 
-  constructor(private activatedRoute: ActivatedRoute, private movieService: MovieService, private dateService: DateService) {
+  constructor(private activatedRoute: ActivatedRoute, private movieService: MovieService) {
   }
 
   ngOnInit(): void {
