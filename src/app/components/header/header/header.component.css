@@ -1,3 +1,4 @@
+
 .wrap{
   box-sizing: border-box;
   height: 60px;
@@ -23,26 +24,55 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  column-gap: 40px;
+}
+
+.right{
+  display: flex;
+  align-items: center;
   column-gap: 20px;
 }
 
-/*************LINKS**************/
-
 a{
+  color: white;
   font-size: 20px;
   text-decoration: none;
+  background: none;
 }
 
-a:hover{
+/******************/
+
+
+.color1 a:hover{
   color: silver;
 }
 
-.active{
+.color2 a:hover{
+  color: white;
+}
+
+.color3 a:hover{
+  color: silver;
+}
+
+/****************/
+
+.color1 .active{
+  color: silver;
+  text-decoration: underline;
+}
+
+.color2 .active{
+  color: red;
+  text-decoration: underline;
+}
+
+.color3 .active{
   color: darkviolet;
   text-decoration: underline;
 }
 
-/***********COLORS***************/
+/******************/
 
 .color1{
   background: indigo;
@@ -50,7 +80,17 @@ a:hover{
   font-size: 20px;
 }
 
+.color2{
+  background: #1f1f1f;
+  color: white;
+  font-size: 20px;
+}
 
+.color3{
+  background: indigo;
+  color: white;
+  font-size: 20px;
+}
 
 
 

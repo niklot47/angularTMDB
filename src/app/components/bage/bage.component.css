@@ -1,4 +1,22 @@
-a{
+.color1 a{
+  text-decoration: none;
+  color: white;
+  padding: 5px 15px;
+  margin: 20px 5px;
+  border-radius: 5px;
+  background: purple;
+}
+
+.color2 a{
+  text-decoration: none;
+  color: white;
+  padding: 5px 15px;
+  margin: 20px 5px;
+  border-radius: 5px;
+  background: #b20000;
+}
+
+.color3 a{
   text-decoration: none;
   color: white;
   padding: 5px 15px;

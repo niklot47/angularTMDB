@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
+
 import {MoviesService} from "../services/movies.service";
 import {DateService} from "../../../data/date.service";
-import {ActivatedRoute} from "@angular/router";
 import {IMovieShort, IPage} from "../../../interface";
 
 @Component({
@@ -11,13 +12,18 @@ import {IMovieShort, IPage} from "../../../interface";
 })
 export class MoviesComponent implements OnInit {
 
+  ngClass: string = 'wrap color1';
   result: IPage;
   movies: IMovieShort[];
   query: string = '';
 
-  constructor(private moviesService:MoviesService, private activatedRoute: ActivatedRoute) { }
+  constructor(private moviesService:MoviesService, private activatedRoute: ActivatedRoute, private dateService:DateService) { }
+
+
 
   ngOnInit(): void {
+    this.dateService.theme.subscribe(value => this.ngClass = `wrap color${value}`);
+
     this.activatedRoute.params.subscribe(params => {
       if (params['query'] !== '-1'){
         this.moviesService.search(params['query'], 1).subscribe(value => {
@@ -33,6 +39,8 @@ export class MoviesComponent implements OnInit {
       }
     })
   }
+
+
 
   setPage(number: number) {
     this.activatedRoute.params.subscribe(params => {

@@ -17,11 +17,14 @@ export class ByGenreComponent implements OnInit {
   genreId: number;
   genre: IGenre;
   movies: IMovieShort[];
+  ngClass: string = 'wrap color1';
 
   constructor(private activatedRoute: ActivatedRoute, private byGenreService: ByGenreService, private dateService:DateService) {
   }
 
   ngOnInit(): void {
+    this.dateService.theme.subscribe(value => this.ngClass = `wrap color${value}`);
+
     this.activatedRoute.params.subscribe(params => {
       this.genreId = params['id'];
       this.byGenreService.getById(params['id'], 1).subscribe(value => {

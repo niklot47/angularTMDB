@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {DateService} from "../../../../data/date.service";
 
 @Component({
   selector: 'app-search-big',
@@ -9,14 +10,15 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
 export class SearchBigComponent implements OnInit {
   form: FormGroup;
   searchQuery: string;
+  ngClass: string = 'wrap color1';
 
-  constructor() {
+  constructor(private dateService:DateService) {
     this._createForm();
     this.searchQuery = ``;
   }
 
   ngOnInit(): void {
-
+    this.dateService.theme.subscribe(value => this.ngClass = `wrap color${value}`);
   }
 
   _createForm(): void {

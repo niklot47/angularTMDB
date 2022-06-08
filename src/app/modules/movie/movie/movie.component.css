@@ -35,16 +35,28 @@
 }
 
 .tagline{
-  /*padding-left: 80px;*/
-  /*font-style: italic;*/
   margin-bottom: 50px;
   font-size: 36px;
 }
 
-.adult{
+
+/********************/
+
+.color1 .adult{
   font-size: 36px;
   color: purple;
 }
+.color2 .adult{
+  font-size: 36px;
+  color: #d50000;
+}
+
+.color3 .adult{
+  font-size: 36px;
+  color: purple;
+}
+
+/*******************/
 
 .budget,
 .homepage,
@@ -62,6 +74,8 @@
 }
 
 .genres{
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 40px;
 }
 
@@ -70,9 +84,19 @@
   margin-top: 50px;
 }
 
-.homepage a{
+/*****************/
+.color1 a{
   color: indigo;
 }
+
+.color2 a{
+  color: #de0000;
+}
+.color3 a{
+  color: indigo;
+}
+
+/*****************/
 
 .overview{
   margin-top: 75px;
@@ -94,6 +118,68 @@
   justify-content: space-between;
 
 }
+
+
+/***********************************/
+
+.wrap::-webkit-scrollbar {
+  width: 10px;
+}
+
+.color1::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+  border-radius: 10px;
+}
+
+.color1::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(180deg, blueviolet, indigo);
+}
+
+/**/
+
+.color2::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+}
+
+.color2::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(180deg, red, #b20000);
+}
+
+/**/
+
+.color3::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+  border-radius: 10px;
+}
+
+.color3::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(180deg, #00c6fb, #005bea);
+}
+
+/*****/
+
+.color1{
+  background: white;
+  color: black;
+}
+
+.color2{
+  background: #3b3b3b;
+  color: white;
+}
+
+.color3{
+  background: white;
+  color: black;
+}
+
 
 
 

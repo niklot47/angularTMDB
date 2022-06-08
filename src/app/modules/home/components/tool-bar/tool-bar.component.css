@@ -1,7 +1,7 @@
 .wrap{
+  width: 90vw;
   margin-top: 30px;
-  border: 1px solid white;
-  border-radius: 20px;
+  border: 1px hidden dimgrey;
 }
 
 .wrap img{
@@ -13,17 +13,48 @@
 .poster{
   height: 45vh;
   overflow-y: hidden;
+  border-radius: 20px;
   }
+
+/*************************/
 
 .search{
   background: hsla(271, 57%, 25%, 0.85);;
   -webkit-box-shadow: 0 0 47px 29px hsla(271, 57%, 25%, 0.85);
   box-shadow: 0 0 47px 29px hsla(271, 57%, 25%, 0.85);
 
-  margin-top: -15vh;
+  margin-top: -20vh;
   position: relative;
   z-index: auto;
+
+  -moz-border-radius-bottomright: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
+
+.color1 .search{
+  background: hsla(271, 57%, 25%, 0.85);;
+  -webkit-box-shadow: 0 0 47px 29px hsla(271, 57%, 25%, 0.85);
+  box-shadow: 0 0 47px 29px hsla(271, 57%, 25%, 0.85);
+  color: black;
+}
+
+.color2 .search{
+  background: hsla(0, 0%, 12%, 0.85);;
+  -webkit-box-shadow: inset 0 0 20px 13px hsla(0, 100%, 22%, 0.85);
+  box-shadow: inset 0 0 20px 13px hsla(0, 100%, 22%, 0.85);
+  color: white;
+}
+
+.color3 .search{
+  background: hsla(271, 57%, 25%, 0.85);;
+  -webkit-box-shadow: 0 0 47px 29px hsla(271, 57%, 25%, 0.85);
+  box-shadow: 0 0 47px 29px hsla(271, 57%, 25%, 0.85);
+  color: black;
+}
+
+/*************************/
 
 .genres{
   width: 90vw;

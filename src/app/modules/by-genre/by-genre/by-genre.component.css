@@ -8,7 +8,7 @@
 .all-genres{
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto 60px;
+  margin: 0 auto 30px;
   width: 90vw;
   row-gap: 15px;
 }
@@ -33,9 +33,19 @@
 /**************************************/
 
 .pages{
+  width: 90vw;
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+}
+
+.pages div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .page,
@@ -49,13 +59,113 @@
   padding: 5px;
   border-radius: 5px;
   min-width: 30px;
+  display: flex;
+  justify-content: center;
 }
 
-.page-active{
+.color1 .page,
+.color1 .page-active{
+  background: indigo;
+  color: white;
+}
+
+.color2 .page,
+.color2 .page-active{
+  background: #820000;
+  color: white;
+}
+
+.color3 .page,
+.color3 .page-active{
+  background: indigo;
+  color: white;
+}
+
+/*****************/
+
+.color1 .page-active{
   background: white;
   color: indigo;
 }
 
-.page-active:hover{
+.color1 .page-active:hover{
   background: lightgrey;
+}
+
+.color2 .page-active{
+  background: none;
+  color: white;
+}
+
+.color2 .page-active:hover{
+  background: #a91d1d;
+}
+
+.color3 .page-active{
+  background: white;
+  color: indigo;
+}
+
+.color3 .page-active:hover{
+  background: lightgrey;
+}
+
+/***********************************/
+
+.wrap::-webkit-scrollbar {
+  width: 10px;
+}
+
+.color1::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+  border-radius: 10px;
+}
+
+.color1::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(180deg, blueviolet, indigo);
+}
+
+/**/
+
+.color2::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+}
+
+.color2::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(180deg, red, #b20000);
+}
+
+/**/
+
+.color3::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+  border-radius: 10px;
+}
+
+.color3::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(180deg, #00c6fb, #005bea);
+}
+
+/*****/
+
+.color1{
+  background: white;
+  color: black;
+}
+
+.color2{
+  background: #3b3b3b;
+  color: white;
+}
+
+.color3{
+  background: white;
+  color: black;
 }

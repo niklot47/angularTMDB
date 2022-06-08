@@ -1,12 +1,25 @@
 
 .wrap{
   width: 90vw;
-  height: 15vh;
-  color: white;
+  height: 20vh;
   padding: 20px;
   font-size: 35px;
   box-sizing: border-box;
 }
+
+.color1{
+  color: white;
+}
+
+.color2{
+  color: white;
+}
+
+.color3{
+  color: white;
+}
+
+/***************************/
 
 .wrap input{
   font-size: 20px;
@@ -22,7 +35,6 @@
 
 .wrap form{
   box-sizing: border-box;
-  /*height: 20vh;*/
   display: flex;
   flex-direction: row;
   align-items: center;

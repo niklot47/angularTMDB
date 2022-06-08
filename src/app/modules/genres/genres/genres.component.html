@@ -1,4 +1,4 @@
-<div class="genres">
+<div [ngClass]="ngClass">
   <a class="dropdown">Genres</a>
   <div class="content">
     <a *ngFor="let genre of genres" routerLink="../genre/{{genre.id}}">{{genre.name}}</a>

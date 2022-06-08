@@ -7,6 +7,7 @@ import {BehaviorSubject} from "rxjs";
 export class DateService {
 
   genresList = new BehaviorSubject<string>('') ;
+  theme = new BehaviorSubject<string>('1') ;
   firstPoster = new BehaviorSubject<string>('') ;
 
   constructor() { }

@@ -9,11 +9,11 @@ import { MovieComponent } from './modules/movie/movie/movie.component';
 import { GenresComponent } from './modules/genres/genres/genres.component';
 import {GenresModule, HomeModule} from "./modules";
 import { ByGenreComponent } from './modules/by-genre/by-genre/by-genre.component';
-import { SearchResultComponent } from './modules/search-result/search-result/search-result.component';
 import { BageComponent } from './components/bage/bage.component';
 import { MoviesComponent } from './modules/movies/movies/movies.component';
 import { SearchComponent } from './components/search/search.component';
 import {ReactiveFormsModule} from "@angular/forms";
+import { ThemsComponent } from './components/thems/thems.component';
 
 @NgModule({
   declarations: [
@@ -23,10 +23,9 @@ import {ReactiveFormsModule} from "@angular/forms";
     MovieComponent,
     GenresComponent,
     ByGenreComponent,
-    SearchResultComponent,
-    // BageComponent,
     MoviesComponent,
     SearchComponent,
+    ThemsComponent,
   ],
   imports: [
     BrowserModule,
