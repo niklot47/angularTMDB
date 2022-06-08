@@ -84,6 +84,11 @@
   margin-top: 50px;
 }
 
+.overview{
+  width: 90vw;
+  margin: 0 auto 8px;
+}
+
 /*****************/
 .color1 a{
   color: indigo;
